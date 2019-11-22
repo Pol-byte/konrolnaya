@@ -1,63 +1,125 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Index</title>
+
     <link rel="stylesheet" href="style.css">
+
     <script src="script.js" ></script>
+
 </head>
+
 <body>
+
     <div class="full-page">
+
         <div class="header">
+
             <h1>Регистрация</h1>
+
         </div>
+
         <div class="form-area">
+
             <form id="form" class="form">
+
                 <div class="form-item">
+
                     <label for="name">Имя</label>
+
                     <input id="name" placeholder="  Введите ваше имя" maxlength="20" required type="text" name="name">
+
                     <div id="error" class="error"></div>
+
                 </div>
+
                 <div class="form-item">
+
                     <label for="secname">Фамилия</label>
+
                     <input id="secname" placeholder="  Введите вашу фамилию" maxlength="20" required type="text" name="secname">
+
                     <div id="error" class="error"></div>
+
                 </div>     
+
                 <div class="form-item">
+
                     <label for="surname">Отчество</label>
+
                     <input id="surname" placeholder="  Введите ваше отчество" maxlength="20" required type="text" name="surname" ><br>
+
                 </div>
+
                 <div class="form-item">
+
                     <label for="email">Адрес электронной почты</label>
-                    <input id="email" maxlength="300" required type="email" placeholder="  Введите ваш адрес электронной почты" name="email">
+
+                    <input id="email" maxlength="300" required type="email" placeholder="  Введите ваш адрес электронной почты" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email">
+
                     <div id="error" class="error"></div>
+
                 </div> 
+
                 <div class="form-item"><br>
+
                     <label for="password">Пароль</label>
+
                     <input id="password" required type="password"  placeholder="  Введите ваш пароль" minlength="10" maxlength="300" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" name="password">
+
                     <div id="error" class="error"></div>
+
                 </div>
+
                 <div class="form-item">
+
                     <label for="date">Дата рождения</label>
+
                     <input id="date" min="1900-01-01" max="2015-01-01" type="date" name="date">
+
                     <div id="error" class="error"></div>
+
                 </div>
+
                 <div class="form-item">
+
                     <label for="sex">Выберите пол:</label> <br>
+
                 <select id="sex" name="sex">
+
                     <option value="Не выбран">Не выбран</option>
+
                     <option value="Женский">Женский</option>
+
                     <option value="Мужской">Мужской</option>
+
                 </select>
+
                     <div id="error" class="error"></div>
+
                 </div>
+
                 <div class="form-submit">
+
                     <input class="submit" type="submit" name="Зарегистрироваться">
+
                     <div id="error" class="error"></div>
+
             </form>
+
         </div>
+
     </div>
+
 </body>
+
 </html> 
