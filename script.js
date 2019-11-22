@@ -31,7 +31,6 @@ surname.addEventListener("input", function (event) {
             }
         });
         document.getElementById("form").onsubmit = function (evt) {
-            localStorage.clear();
             evt.preventDefault();
             console.log(evt);
             let object = {};
