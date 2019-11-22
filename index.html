@@ -36,7 +36,7 @@
                 </div> 
                 <div class="form-item"><br>
                     <label for="password">Пароль</label>
-                    <input id="password" required type="password"  placeholder="  Введите ваш пароль" minlength="10" maxlength="300" name="password">
+                    <input id="password" required type="password"  placeholder="  Введите ваш пароль" minlength="10" maxlength="300" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" name="password">
                     <div id="error" class="error"></div>
                 </div>
                 <div class="form-item">
